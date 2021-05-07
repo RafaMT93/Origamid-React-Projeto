@@ -1,0 +1,12 @@
+.button {
+  background-color: #ffcc00;
+  border-radius: 5px;
+  border-color: transparent;
+  cursor: pointer;
+  transition: all 0.5s;
+  margin: 10px 10px 10px 10xp;
+}
+
+.button:hover {
+  background-color: #eeca14;
+}
