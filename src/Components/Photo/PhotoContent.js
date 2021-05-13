@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import styles from './PhotoContent.module.css';
+import { Link } from 'react-router-dom';
 import PhotoComments from './PhotoComments';
 
 const PhotoContent = ({ data }) => {
@@ -25,7 +25,7 @@ const PhotoContent = ({ data }) => {
           </ul>
         </div>
       </div>
-      <PhotoComments id={photo.id} comments={photo.comments} />
+      <PhotoComments id={photo.id} comments={comments} />
     </div>
   );
 };
