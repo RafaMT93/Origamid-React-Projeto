@@ -7,8 +7,13 @@ const types = {
       'A senha deve ser acima de 8 caracteres e conter no mínimo 1 dígito, 1 letra minúscula e 1 letra maíuscula',
   },
   email: {
-    regex: /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+    regex:
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
     message: 'Preencha com um e-mail válido',
+  },
+  number: {
+    regex: /^\d+$/,
+    message: 'Utilize números apenas',
   },
 };
 
