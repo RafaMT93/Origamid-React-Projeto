@@ -14,7 +14,9 @@ const Header = () => {
           <Dogs />
         </Link>
         {data ? (
-          <p className={styles.login}>{'Olá ' + data.nome + '!'}</p>
+          <Link to="/conta" className={styles.login}>
+            {'Olá ' + data.nome + '!'}
+          </Link>
         ) : (
           <Link to="/login" className={styles.login}>
             Login / Criar
