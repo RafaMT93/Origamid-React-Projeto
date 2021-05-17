@@ -13,6 +13,7 @@ import Footer from './Components/Footer';
 
 import NotFound from './Components/NotFound';
 import ProtectedRoute from './Components/Helper/ProtectedRoute';
+import UserProfile from './Components/User/UserProfile';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="login/*" element={<Login />} />
             <ProtectedRoute path="conta/*" element={<User />} />
+            <Route path="perfil/:user" element={<UserProfile />} />
             <Route path="foto/:id" element={<Photo />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
