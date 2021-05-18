@@ -3,6 +3,7 @@ export const API_TOKEN = '/jwt-auth/v1/token';
 export const API_PHOTO = '/api/photo';
 export const API_USER = '/api/user';
 export const API_COMMENT = '/api/comment';
+export const API_PASS = '/api/password';
 
 export function TOKEN_POST(body) {
   return {
@@ -109,6 +110,19 @@ export function PHOTO_DELETE(id) {
       headers: {
         Authorization: 'Bearer ' + window.localStorage.getItem('token'),
       },
+    },
+  };
+}
+
+export function PASSWORD_LOST(body) {
+  return {
+    url: API_URL + API_PASS + '/lost',
+    options: {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(body),
     },
   };
 }
