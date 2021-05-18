@@ -30,7 +30,7 @@ const LoginPasswordLost = () => {
       ) : (
         <form onSubmit={handleSubmit}>
           <Input
-            label="Digite o seu e-mail para mandarmos um token de recuperação da senha a ele"
+            label="Digite o seu e-mail ou nome de usuário para mandarmos um token de recuperação"
             id="login"
             type="text"
             name="login"
