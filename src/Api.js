@@ -4,6 +4,7 @@ export const API_PHOTO = '/api/photo';
 export const API_USER = '/api/user';
 export const API_COMMENT = '/api/comment';
 export const API_PASS = '/api/password';
+export const API_STATS = '/api/stats';
 
 export function TOKEN_POST(body) {
   return {
@@ -136,6 +137,18 @@ export function PASSWORD_RESET(body) {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(body),
+    },
+  };
+}
+
+export function GET_STATS() {
+  return {
+    url: API_URL + API_STATS,
+    options: {
+      method: 'GET',
+      headers: {
+        Authorization: 'Bearer ' + window.localStorage.getItem('token'),
+      },
     },
   };
 }
