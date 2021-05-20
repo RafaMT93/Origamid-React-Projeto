@@ -89,6 +89,16 @@ export function PHOTO_GET(id) {
   };
 }
 
+export function PHOTO_USER_GET(id) {
+  return {
+    url: `${API_URL + API_PHOTO}/?_user=${id}`,
+    options: {
+      method: 'GET',
+      cache: 'no-store',
+    },
+  };
+}
+
 export function COMMENT_POST(id, body) {
   return {
     url: `${API_URL + API_COMMENT}/${id}`,
