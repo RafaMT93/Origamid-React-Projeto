@@ -12,4 +12,4 @@
 </dl>
 <h2>🎯 Objective</h2>
 <p>Project created in the course of ReactJS in Origamid site.</p>
-<p>For view, clone this project, run <code><b>npm i</b></code> in the folder and execute with <code><b>npm start</b></code></p>.
+<p>For view, clone this project, run <code><b>npm i</b></code> in the folder and execute with <code><b>npm start</b></code>.</p>
