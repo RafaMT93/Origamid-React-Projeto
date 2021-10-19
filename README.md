@@ -2,7 +2,6 @@
 <hr>
 <h2>Overview</h2>
 <p>A social network for dogs.</p>
-<p>A 
 <h2>⚙️ Used Libraries</h2>
 <dl>
   <dt><b>ReactJS</b></dt>
